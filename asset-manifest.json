@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SystemForMonitoringStudentGrades/static/css/main.100cdd0b.css",
+    "main.js": "/SystemForMonitoringStudentGrades/static/js/main.ee96bfdb.js",
+    "index.html": "/SystemForMonitoringStudentGrades/index.html",
+    "main.100cdd0b.css.map": "/SystemForMonitoringStudentGrades/static/css/main.100cdd0b.css.map",
+    "main.ee96bfdb.js.map": "/SystemForMonitoringStudentGrades/static/js/main.ee96bfdb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.100cdd0b.css",
+    "static/js/main.ee96bfdb.js"
+  ]
+}

@@ -1,4 +1,4 @@
-live page:https://bakerallozi.github.io/SystemForMonitoringStudentGrades/
+live page: https://bakerallozi.github.io/SystemForMonitoringStudentGrad-react.js/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

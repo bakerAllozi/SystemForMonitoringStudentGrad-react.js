@@ -37,10 +37,27 @@
 //   console.log(text);
 // }
 //--------------------------------------------------------------------------------------
-// function noretern(numbers: number, mutet: (v: number) => number): number[] {
-//   return numbers.map(mutet);
-// }
-// noretern([5, 7, 8], (v) => v * 5);
+function noretern(
+  numbers: number[],
+  mutet: (v: number) => number,
+  name: string[]
+): number[] {
+  return [
+    ...numbers.map(mutet),
+    name.length,
+    const summedArray = array1.reduce<number[]>((acc, value, index) => {
+        acc.push(value + array2[index]); // جمع العناصر بناءً على الفهرس
+        return acc;
+      }, []);
+
+
+
+    ...numbers.map((v) =>
+      name.length >= 5 ? v * name.length : name.length + v
+    ),
+  ];
+}
+console.log(noretern([5, 7, 8], (v) => v * 5, ["baker", "aloziiiiiii", "bab"]));
 
 // function noretern(numbers: number[], mutet: (v: number) => number): number[] {
 //   return numbers.map(mutet);

@@ -37,30 +37,64 @@
 //   console.log(text);
 // }
 //--------------------------------------------------------------------------------------
-function noretern(
-  numbers: number[],
-  mutet: (v: number) => number,
-  name: string[]
-): number[] {
-  return [
-    ...numbers.map(mutet),
-    name.length,
-    const summedArray = array1.reduce<number[]>((acc, value, index) => {
-        acc.push(value + array2[index]); // جمع العناصر بناءً على الفهرس
-        return acc;
-      }, []);
+// function noretern(
+//   numbers: number[],
+//   mutet: (v: number) => number,
+//   name: string[]
+// ): [number[], number[]] {
+//   return [
+//     numbers.map(mutet),
+//     numbers.reduce<number[]>((acc, value, index) => {
+//       acc.push(name[index].length * value);
+//       return acc;
+//     }, []),
+//   ];
 
+// ...numbers.map((v) =>
+//   name.length >= 5 ? v * name.length : name.length + v
+// ),
+// }
+// console.log(noretern([5, 7, 8], (v) => v * 5, ["baker", "aloziiiiiii", "bab"]));
 
-
-    ...numbers.map((v) =>
-      name.length >= 5 ? v * name.length : name.length + v
-    ),
-  ];
-}
-console.log(noretern([5, 7, 8], (v) => v * 5, ["baker", "aloziiiiiii", "bab"]));
-
-// function noretern(numbers: number[], mutet: (v: number) => number): number[] {
-//   return numbers.map(mutet);
+// function noretern(numbers: number[]): coordinate {
+//   return {
+//     ...numbers,
+//   };
 // }
 
-// console.log(noretern([5, 7, 8], (v) => v * 5));
+// interface Coordinate {
+//   x: number;
+//   y: number;
+// }
+
+// function parseCoordinate(str: string): Coordinate;
+// function parseCoordinate(obj: Coordinate): Coordinate;
+// function parseCoordinate(x: number, y: number): Coordinate;
+// function parseCoordinate(arg1: unknown, arg2?: unknown): Coordinate {
+//   let coord: Coordinate = {
+//     x: 0,
+//     y: 0,
+//   };
+
+//   if (typeof arg1 === "string") {
+//     (arg1 as string).split(",").forEach((str) => {
+//       const [key, value] = str.split(":");
+//       coord[key as "x" | "y"] = parseInt(value, 10);
+//     });
+//   } else if (typeof arg1 === "object") {
+//     coord = {
+//       ...(arg1 as Coordinate),
+//     };
+//   } else {
+//     coord = {
+//       x: arg1 as number,
+//       y: arg2 as number,
+//     };
+//   }
+
+//   return coord;
+// }
+
+// console.log(parseCoordinate(10, 20));
+// console.log(parseCoordinate({ x: 52, y: 35 }));
+// console.log(parseCoordinate("x:12,y:22"));
